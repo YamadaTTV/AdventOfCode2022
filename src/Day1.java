@@ -44,7 +44,6 @@ public class Day1 {
         int top1 = 0;
         int top2 = 0;
         int top3 = 0;
-        int elfNumber = 0;
         list = Collections.emptyList();
         try {
             list = Files.readAllLines(Paths.get("C:\\Users\\liamm\\Documents\\AdventOfCode\\src\\resources\\input.txt"), StandardCharsets.UTF_8);
