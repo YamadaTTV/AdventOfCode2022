@@ -76,6 +76,7 @@ public class Day1 {
         List<String> test = new ArrayList<String>();
         /* Part 1 */
         part1(test);
+        /* Part 2 */
         part2(test);
     }
 }
