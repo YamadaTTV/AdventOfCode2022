@@ -13,7 +13,7 @@ public class Day1 {
         int current_calories = 0;
         list = Collections.emptyList();
         try {
-            list = Files.readAllLines(Paths.get("C:\\Users\\liamm\\Documents\\AdventOfCode\\src\\resources\\input.txt"), StandardCharsets.UTF_8);
+            list = Files.readAllLines(Paths.get("C:\\Users\\liamm\\Documents\\AdventOfCode\\src\\resources\\input1.txt"), StandardCharsets.UTF_8);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -39,7 +39,7 @@ public class Day1 {
         int top3 = 0;
         list = Collections.emptyList();
         try {
-            list = Files.readAllLines(Paths.get("C:\\Users\\liamm\\Documents\\AdventOfCode\\src\\resources\\input.txt"), StandardCharsets.UTF_8);
+            list = Files.readAllLines(Paths.get("C:\\Users\\liamm\\Documents\\AdventOfCode\\src\\resources\\input1.txt"), StandardCharsets.UTF_8);
         } catch (IOException e){
             e.printStackTrace();
         }
