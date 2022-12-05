@@ -16,7 +16,6 @@ public class Day4 {
         }
         int containTheOther = 0;
         for(int i = 0; i < list.size(); i++){
-            //System.out.println(list.get(i)); // This is a line
             String[] pairSplit = list.get(i).split(",");
             String[] firstPair = pairSplit[0].split("-");
             String[] secondPair = pairSplit[1].split("-");
