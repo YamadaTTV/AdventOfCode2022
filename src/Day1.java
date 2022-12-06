@@ -15,7 +15,6 @@ public class Day1 {
         try {
             list = Files.readAllLines(Paths.get("C:\\Users\\liamm\\Documents\\AdventOfCode\\src\\resources\\input1.txt"), StandardCharsets.UTF_8);
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         for(int i = 0; i < list.size(); i++){
