@@ -31,6 +31,28 @@ public class Day6 {
         System.out.println("Answer: The number of characters that needs to be processed are " + charProcessed);
     }
 
+    public static void part2(List<String> list){
+        int charProcessed = 0;
+        list = Collections.emptyList();
+        int end = 14;
+        try{
+            list = Files.readAllLines(Paths.get("src\\resources\\input6.txt"));
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+        for(int i = 0; i < list.size(); i++){
+            String line = list.get(i);
+            for(int j = 0; j < line.length() - end; j++){
+                String window = createWindow(line, j, end);
+                if(isUnique(window)){
+                    charProcessed = j + end;
+                    break;
+                }
+            }
+        }
+        System.out.println("Answer: The number of characters that needs to be processed are " + charProcessed);
+    }
+
     public static String createWindow(String input, int start, int end){
         StringBuilder res = new StringBuilder();
         for(int i = start; i < start + end; i++){
@@ -53,6 +75,9 @@ public class Day6 {
 
     public static void main(String[] args){
         List<String> test = new ArrayList<>();
+        /* Part 1 */
         part1(test);
+        /* Part 2 */
+        part2(test);
     }
 }
