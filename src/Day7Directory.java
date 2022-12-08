@@ -11,6 +11,7 @@ public class Day7Directory {
     public Day7Directory(String name, Day7Directory root){
         this.name = name;
         files = new ArrayList<>();
+        childrenDir = new ArrayList<>();
         if(root != null){
             root.childrenDir.add(root);
         }
