@@ -26,12 +26,15 @@ public class Day8 {
         for(int row = 0; row < arr2D[0].length; row++){
             for(int col = 0; col < arr2D[1].length; col++){
                 if(isVisible(arr2D,row,col)){
-                    System.out.println("arr2d["+row+"]["+col+"] is visible!!");
                     visibleTrees++;
                 }
             }
         }
         System.out.println(visibleTrees);
+    }
+
+    public static void part2(){
+
     }
 
     public static boolean isVisible(int[][] input, int row, int col){
